@@ -3,15 +3,15 @@ package expense.manager.common.dto;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class BaseDto {
 
 	@JsonProperty("modified_at")
-	private Date modifiedAt;
+	private LocalDateTime modifiedAt;
 
 	@JsonProperty("created_at")
-	protected Date createdAt;
+	protected LocalDateTime createdAt;
 
 }

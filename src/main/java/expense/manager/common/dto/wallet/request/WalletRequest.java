@@ -1,5 +1,6 @@
 package expense.manager.common.dto.wallet.request;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -17,6 +18,7 @@ public class WalletRequest {
 	private BigDecimal balance;
 
 	@Min(1)
+	@JsonProperty("currency_id")
 	private long currencyId;
 
 }

@@ -14,7 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.Version;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -29,11 +29,11 @@ public class BaseEntity {
 
 	@CreatedDate
 	@Column(name = "created_at", updatable = false, nullable = false)
-	protected Date createdAt;
+	protected LocalDateTime createdAt;
 
 	@LastModifiedDate
 	@Column(name = "modified_at")
-	protected Date modifiedAt;
+	protected LocalDateTime modifiedAt;
 
 	@Column
 	@Version
