@@ -1,9 +1,13 @@
-package expense.manager.common.currency.response;
+package expense.manager.common.dto.currency.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
-public class CurrencyResponse extends BaseDto{
+@Data
+public class CurrencyResponse {
+
     private long id;
+
     private String name;
 
     @JsonProperty("icon_url")
