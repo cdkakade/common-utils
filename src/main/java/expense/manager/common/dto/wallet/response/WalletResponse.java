@@ -7,9 +7,13 @@ import lombok.EqualsAndHashCode;
 import java.math.BigDecimal;
 
 @Data
-@EqualsAndHashCode(callSuper=false)
+@EqualsAndHashCode(callSuper = false)
 public class WalletResponse extends BaseDto {
-    private String id;
-    private String name;
-    private BigDecimal balance;
+
+	private String id;
+
+	private String name;
+
+	private BigDecimal balance;
+
 }

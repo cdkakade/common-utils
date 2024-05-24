@@ -22,23 +22,21 @@ import java.util.Date;
 @EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
 
-    @Id
-    @GeneratedValue(generator = "custom-generator",
-            strategy = GenerationType.IDENTITY)
-    @GenericGenerator(
-            name = "custom-generator",
-            strategy = "expense.manager.common.utility.BaseIdentifierGenerator")
-    protected String id;
+	@Id
+	@GeneratedValue(generator = "custom-generator", strategy = GenerationType.IDENTITY)
+	@GenericGenerator(name = "custom-generator", strategy = "expense.manager.common.utility.BaseIdentifierGenerator")
+	protected String id;
 
-    @CreatedDate
-    @Column(name = "created_at", updatable = false, nullable = false)
-    protected Date createdAt;
+	@CreatedDate
+	@Column(name = "created_at", updatable = false, nullable = false)
+	protected Date createdAt;
 
-    @LastModifiedDate
-    @Column(name = "modified_at")
-    protected Date modifiedAt;
+	@LastModifiedDate
+	@Column(name = "modified_at")
+	protected Date modifiedAt;
 
-    @Column
-    @Version
-    protected int version;
+	@Column
+	@Version
+	protected int version;
+
 }

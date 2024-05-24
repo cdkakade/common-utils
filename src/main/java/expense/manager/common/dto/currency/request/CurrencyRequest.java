@@ -9,12 +9,13 @@ import javax.validation.constraints.NotBlank;
 @Data
 public class CurrencyRequest {
 
-    @Min(1)
-    private long id;
+	@Min(1)
+	private long id;
 
-    @NotBlank
-    private String name;
+	@NotBlank
+	private String name;
 
-    @JsonProperty("icon_url")
-    private String iconUrl;
+	@JsonProperty("icon_url")
+	private String iconUrl;
+
 }

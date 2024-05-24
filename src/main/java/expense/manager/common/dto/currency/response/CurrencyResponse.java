@@ -6,10 +6,11 @@ import lombok.Data;
 @Data
 public class CurrencyResponse {
 
-    private long id;
+	private long id;
 
-    private String name;
+	private String name;
 
-    @JsonProperty("icon_url")
-    private String iconUrl;
+	@JsonProperty("icon_url")
+	private String iconUrl;
+
 }
