@@ -37,6 +37,6 @@ public class BaseEntity {
 
 	@Column
 	@Version
-	protected int version;
+	protected Long version;
 
 }
