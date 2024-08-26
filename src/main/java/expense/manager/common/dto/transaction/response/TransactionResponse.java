@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,5 +16,9 @@ public class TransactionResponse {
 	private BigDecimal amount;
 
 	private TransactionType type;
+
+	private LocalDateTime createdAt;
+
+	private LocalDateTime modifiedAt;
 
 }
