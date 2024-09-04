@@ -16,10 +16,10 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class TransactionRequest {
 
-    @DecimalMin(value = "0.0", inclusive = false)
-    private BigDecimal amount;
+	@DecimalMin(value = "0.0", inclusive = false)
+	private BigDecimal amount;
 
-    @NotNull
-    private TransactionType type;
+	@NotNull
+	private TransactionType type;
 
 }
