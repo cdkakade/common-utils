@@ -2,6 +2,7 @@ package expense.manager.common.dto.transaction.request;
 
 import expense.manager.common.dto.transaction.TransactionType;
 import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,5 +22,8 @@ public class TransactionRequest {
 
 	@NotNull
 	private TransactionType type;
+
+	@NotBlank
+	private String walletId;
 
 }
