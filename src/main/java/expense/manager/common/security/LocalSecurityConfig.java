@@ -12,9 +12,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @Profile("local")
 public class LocalSecurityConfig {
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(authorizeRequests -> authorizeRequests.anyRequest().permitAll()).build();
-    }
+	@Bean
+	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+		return http.authorizeHttpRequests(authorizeRequests -> authorizeRequests.anyRequest().permitAll()).build();
+	}
 
 }
